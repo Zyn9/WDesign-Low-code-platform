@@ -1,0 +1,72 @@
+body{
+	background-color:#181818;
+	font-family: Microsoft YaHei;
+	color: #FFFFFF;
+}
+button{
+	background-color: #A8FF35;
+	border-radius: 12px;
+}
+button.but1{
+	background-color: #FFFFFF;
+}
+h1{
+	margin-top: 80px;
+}
+p.but{
+	font-size: 10px;
+	margin-top: 50px;
+	margin-left: 130px;
+}
+div.pic1{
+	margin-top: 20px;
+	margin-right: 150px;
+}
+div.pic2{
+	margin-left: 150px;
+	margin-top:-50px;
+}
+div.log{
+	margin-top: -30px;
+	float: right;
+}
+div.center{
+	margin-top: -35px;
+}
+a{
+	text-decoration:none;
+	color: #FFFFFF;
+}
+div.guide{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #181818;
+}
+h2{
+	margin-top: 100px;
+	padding-top: 30px;
+	font-size: 60px;
+}
+#wr1{
+	margin-left: 50px;
+	margin-top: 160px;
+}
+#wr2{
+	margin-right: 50px;
+	padding-bottom: 100px;
+}
+h3{
+	padding-top: 100px;
+	color: black;
+	font-size: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h4{
+	color: #8B8B8B;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 40px;
+	padding-top: 50px;
+}
