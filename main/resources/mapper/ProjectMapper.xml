@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Dept.xml 在com.tarena.entity 包中  -->
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<!-- namespace：接口的名字 -->
+<mapper namespace="mapper.ProjectMapper">
+	<!--根据账户查询信息-->
+    <select id="getUserProject" parameterType="Pojo.Project">
+		SELECT `id`,`name`,`account`,`filepath`,`createTime`,`modifyTime`,`isLive`
+		FROM project
+		WHERE account=?
+	</select>
+    <!--根据id查询信息-->
+    <select id="getProjectInfo" resultType="Pojo.Project">
+       SELECT `id`,`name`,`account`,`filepath`,`createTime`,`modifyTime`,`isLive`
+       FROM project
+       WHERE id=?
+	</select>
+
+	<!--根据id查询文件路径-->
+	<select id="getProjectFilepath" resultType="Pojo.Project">
+		SELECT `filepath`
+		FROM project
+		WHERE id=?
+	</select>
+
+	<!--插入数据-->
+	<insert id="addProject" parameterType="Pojo.Project">
+		INSERT INTO project(`id`,`name`,`account`,`content`,`createTime`,`modifyTime`,`isLive`)
+		values(?,?,?,?,?,?,?)
+	</insert>
+
+	<!--根据id删除项目-->
+	<delete id="deleteProject" >
+		DELETE FROM project
+		WHERE id=?
+	</delete>
+
+	<!--更新项目-->
+	<update id="updateProject">
+		UPDATE project SET
+    </update>
+</mapper>
+
+
+
+
+
+
+

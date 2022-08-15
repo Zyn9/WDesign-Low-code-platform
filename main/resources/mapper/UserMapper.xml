@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Dept.xml 在com.tarena.entity 包中  -->
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<!-- namespace：接口的名字 -->
+<mapper namespace="mapper.UserMapper">
+    <insert id="addUser" parameterType="Pojo.User">
+		INSERT INTO user
+		VALUES(#{account},#{pwd},#{username},#{vip})
+	</insert>
+    <!--用户登录-->
+    <select id="findUserByUsernameAndPassword" resultType="Pojo.User">
+		SELECT account,pwd,username,vip
+		FROM user
+		WHERE  account=#{account}
+		AND  pwd=#{pwd}
+	</select>
+</mapper>
+
+
+
+
+
+
+
